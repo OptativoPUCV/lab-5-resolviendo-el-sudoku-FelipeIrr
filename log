@@ -31,3 +31,24 @@ Fri, May 16, 2025  7:36:10 PM:
  tests:  6|2
 total_score: 45/70
 60fd38b
+Fri, May 16, 2025  7:38:41 PM: 
+ sudoku.c | 15 +++++++--------
+ 1 file changed, 7 insertions(+), 8 deletions(-)
+Compilation failed
+In file included from test.c:5:0:
+sudoku.c: In function 'is_valid':
+sudoku.c:53:14: error: 'k' undeclared (first use in this function)
+              k=n->sudo[i][j];
+              ^
+sudoku.c:53:14: note: each undeclared identifier is reported only once for each function it appears in
+sudoku.c:49:9: error: variable 'box' set but not used [-Werror=unused-but-set-variable]
+     int box[9][10]={0};
+         ^~~
+sudoku.c:48:9: error: variable 'columnas' set but not used [-Werror=unused-but-set-variable]
+     int columnas[9][10]={0};
+         ^~~~~~~~
+sudoku.c:47:9: error: variable 'filas' set but not used [-Werror=unused-but-set-variable]
+     int filas[9][10]={0};
+         ^~~~~
+cc1.exe: all warnings being treated as errors
+a19db26
